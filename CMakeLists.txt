@@ -9,6 +9,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_compile_options(-Wall -Wextra)
+add_definitions(-DPROJECT_ROOT_DIR="${CMAKE_SOURCE_DIR}")
 
 # Define source files
 set(SRC_FILES src/main.cpp src/exercises.cpp)

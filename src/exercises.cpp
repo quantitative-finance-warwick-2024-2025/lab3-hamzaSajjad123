@@ -46,12 +46,11 @@ unsigned int fib_loop(unsigned int n)
         return 1;
     }
 
-    unsigned int f_n;
-    unsigned int f_n_minus_1 = 1;
-    unsigned int f_n_minus_2 = 0;
+    unsigned long long f_n;
+    unsigned long long f_n_minus_1 = 1;
+    unsigned long long f_n_minus_2 = 0;
 
-    // implement the loop here
-    for(unsigned int i = 2;i<=n; i++){
+    for(unsigned int i = 2; i <= n; i++) {
         f_n = f_n_minus_1 + f_n_minus_2;
         f_n_minus_2 = f_n_minus_1;
         f_n_minus_1 = f_n;
@@ -59,6 +58,7 @@ unsigned int fib_loop(unsigned int n)
 
     return f_n;
 }
+
 
 /*
 Exercise 3:
@@ -109,11 +109,14 @@ void exercise_4()
 unsigned int fib_t_recursion_helper(unsigned int n, unsigned int f_n, unsigned int f_n_minus_1)
 {
     // implement n == 1 case
+    if (n == 0){
+        return f_n_minus_1;
+    }
     if (n ==1){
         return f_n;
     }
     // implement the tail recursion in the return statement
-    return fib_t_recursion_helper(n-1,f_n_minus_1,f_n+f_n_minus_1);
+    return fib_t_recursion_helper(n-1,f_n+f_n_minus_1, f_n);
     //return 0;
 }
 

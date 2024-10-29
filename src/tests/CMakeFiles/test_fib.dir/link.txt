@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_fib.dir/test_fib.cpp.o CMakeFiles/test_fib.dir/__/exercises.cpp.o  -o test_fib 

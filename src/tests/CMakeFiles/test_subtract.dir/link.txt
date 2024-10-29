@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_subtract.dir/test_subtract.cpp.o CMakeFiles/test_subtract.dir/__/exercises.cpp.o  -o test_subtract 

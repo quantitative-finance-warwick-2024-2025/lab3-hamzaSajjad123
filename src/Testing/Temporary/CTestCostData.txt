@@ -1,0 +1,6 @@
+test_subtract 6 0.000546444
+test_fib 3 0.00145462
+benchmark_fib 6 1.6353
+check_benchmark_results 0 0
+---
+check_benchmark_results

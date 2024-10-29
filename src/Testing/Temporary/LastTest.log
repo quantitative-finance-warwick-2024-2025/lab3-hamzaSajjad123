@@ -1,0 +1,111 @@
+Start testing: Oct 29 13:37 UTC
+----------------------------------------------------------
+1/4 Testing: test_subtract
+1/4 Test: test_subtract
+Command: "/workspaces/lab3-hamzaSajjad123/src/tests/test_subtract"
+Directory: /workspaces/lab3-hamzaSajjad123/src/tests
+"test_subtract" start time: Oct 29 13:37 UTC
+Output:
+----------------------------------------------------------
+===============================================================================
+All tests passed (3 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_subtract" end time: Oct 29 13:37 UTC
+"test_subtract" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: test_fib
+2/4 Test: test_fib
+Command: "/workspaces/lab3-hamzaSajjad123/src/tests/test_fib"
+Directory: /workspaces/lab3-hamzaSajjad123/src/tests
+"test_fib" start time: Oct 29 13:37 UTC
+Output:
+----------------------------------------------------------
+===============================================================================
+All tests passed (30 assertions in 3 test cases)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"test_fib" end time: Oct 29 13:37 UTC
+"test_fib" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: benchmark_fib
+3/4 Test: benchmark_fib
+Command: "/workspaces/lab3-hamzaSajjad123/src/tests/benchmark_fib" "-r" "console" "-o" "fib_benchmark.txt"
+Directory: /workspaces/lab3-hamzaSajjad123/src/tests
+"benchmark_fib" start time: Oct 29 13:37 UTC
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   9.81 sec
+----------------------------------------------------------
+Test Passed.
+"benchmark_fib" end time: Oct 29 13:37 UTC
+"benchmark_fib" time elapsed: 00:00:09
+----------------------------------------------------------
+
+4/4 Testing: check_benchmark_results
+4/4 Test: check_benchmark_results
+Command: "/workspaces/lab3-hamzaSajjad123/src/tests/check_benchmark_results"
+Directory: /workspaces/lab3-hamzaSajjad123/src/tests
+"check_benchmark_results" start time: Oct 29 13:37 UTC
+Output:
+----------------------------------------------------------
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+check_benchmark_results is a Catch v2.13.7 host application.
+Run with -? for options
+
+-------------------------------------------------------------------------------
+Check for release results file
+-------------------------------------------------------------------------------
+/workspaces/lab3-hamzaSajjad123/tests/check_benchmark_results.cpp:7
+...............................................................................
+
+/workspaces/lab3-hamzaSajjad123/tests/check_benchmark_results.cpp:12: FAILED:
+  REQUIRE( stream.is_open() )
+with expansion:
+  false
+
+-------------------------------------------------------------------------------
+Check for debug results file
+-------------------------------------------------------------------------------
+/workspaces/lab3-hamzaSajjad123/tests/check_benchmark_results.cpp:15
+...............................................................................
+
+/workspaces/lab3-hamzaSajjad123/tests/check_benchmark_results.cpp:20: FAILED:
+  REQUIRE( stream.is_open() )
+with expansion:
+  false
+
+-------------------------------------------------------------------------------
+Check for comments file
+-------------------------------------------------------------------------------
+/workspaces/lab3-hamzaSajjad123/tests/check_benchmark_results.cpp:23
+...............................................................................
+
+/workspaces/lab3-hamzaSajjad123/tests/check_benchmark_results.cpp:28: FAILED:
+  REQUIRE( stream.is_open() )
+with expansion:
+  false
+
+===============================================================================
+test cases: 3 | 3 failed
+assertions: 3 | 3 failed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"check_benchmark_results" end time: Oct 29 13:37 UTC
+"check_benchmark_results" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 29 13:37 UTC
